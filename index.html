@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="refresh" content="5; url=https://sites.google.com/site/zeidyaghi"/>
+<head>
+<title>My WebSite In Google</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+  #myImage {
+    display: none; /* Hide image initially */
+  }
+</style>
+</head>
+<body>
+
+<img id="myImage" src="familyolympiad.png" alt="صورة" />
+
+<script>
+$(document).ready(function(){
+  $("#myImage").fadeIn(2000, function() { // Fade in the image over 2 seconds
+    setTimeout(function() {
+      $("#myImage").fadeOut(2000); // Fade out after 2 seconds
+    }, 2000);
+  });
+});
+</script>
+
+</body>
+</html>
